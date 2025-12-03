@@ -12,29 +12,38 @@ A Rainbow Six Siege-style tactical shooter built for web browsers using Babylon.
 - **Operator Abilities**: Unique gadgets and abilities for each operator
 - **Real-time Networking**: Authoritative server with lag compensation
 
-## Installation
+## Quick Start
+
+### Local Development
 
 ```bash
+# Install dependencies
 npm install
-```
 
-## Running the Game
-
-Start both server and client:
-```bash
+# Run development server (client + server)
 npm run dev
 ```
 
-Or run separately:
-```bash
-# Terminal 1 - Server
-npm run server
+The game will be available at `http://localhost:3000`
 
-# Terminal 2 - Client
-npm run client
+### Deploy to Render.com
+
+```bash
+# 1. Push to GitHub
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/YOUR_USERNAME/tactical-shooter-5v5.git
+git push -u origin main
+
+# 2. Deploy on Render
+# - Go to render.com
+# - Click "New +" → "Blueprint"
+# - Connect your repo
+# - Click "Apply"
 ```
 
-The game will be available at `http://localhost:3000`
+See **[BUILD_DEPLOY_SETTINGS.md](BUILD_DEPLOY_SETTINGS.md)** for detailed deployment instructions.
 
 ## Controls
 
